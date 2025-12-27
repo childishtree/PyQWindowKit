@@ -21,6 +21,7 @@ The project consists of two main parts:
     *   `shiboken6_generator` (Supports the `shiboken_generator_create_binding` CMake function)
 
 > Use the Release build configuration for the entire build and installation process.
+> shiboken_generator_create_binding is the core command. It simultaneously performs "code generation" and "extension module compilation", and depends on bindings.h (export list) and the typesystem file (mapping rules);
 
 ## Project Structure
 *   `CMakeLists.txt`: Main CMake build configuration file.
