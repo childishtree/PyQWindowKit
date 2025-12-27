@@ -146,3 +146,9 @@ python gallery/main.py
 *   **跨平台支持**：设计可在 Windows、macOS 和 Linux 上运行（尽管某些效果是 Windows 特有的）。
 *   **原生集成**：使用 QWindowKit 与原生窗口系统 API 进行交互。
 *   **高度可定制**：通过 Python 完全控制标题栏和窗口行为。
+
+## 感谢
+感谢以下开源项目的帮助：
+- https://github.com/Darcy-C/Shiboken6Demo
+- https://github.com/ozguronsoy/SimpleMapView/tree/main
+- https://github.com/refeyn/QuickGraphLib/tree/master
