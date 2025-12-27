@@ -148,3 +148,10 @@ python gallery/main.py
 *   **Cross-Platform**: Designed to work on Windows, macOS, and Linux (though some effects are Windows-specific) .
 *   **Native Integration**: Uses QWindowKit to interact with native windowing APIs .
 *   **Highly Customizable**: Full control over the title bar and window behavior via Python .
+
+## Acknowledgements
+
+Thanks to the help of the following open source projects:
+- https://github.com/Darcy-C/Shiboken6Demo
+- https://github.com/ozguronsoy/SimpleMapView/tree/main
+- https://github.com/refeyn/QuickGraphLib/tree/master
