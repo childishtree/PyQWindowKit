@@ -19,6 +19,7 @@
     *   `shiboken6_generator`（支持 `shiboken_generator_create_binding` 的 CMake 函数）
 
 > 全程使用 Release（发布）版本进行构建与安装。
+> shiboken_generator_create_binding 是核心指令，它同时完成 “代码生成” 和 “扩展模块编译”，依赖 bindings.h（导出清单）和 typesystem 文件（映射规则）；
 
 ## 项目结构
 *   `CMakeLists.txt`：主要的 CMake 构建配置文件。
