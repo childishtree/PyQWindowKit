@@ -1,0 +1,15 @@
+<!-- bindings_widgets.xml -->
+<typesystem package="Quick">
+	<load-typesystem name="typesystem_core.xml" generate="no"/>
+	<load-typesystem name="typesystem_gui.xml" generate="no"/>
+    <load-typesystem name="typesystem_qml.xml" generate="no"/>
+	<load-typesystem name="typesystem_quick.xml" generate="no"/>
+	<!-- Bind QWindowKit::Quick -->
+	<namespace-type name="QWK" visible="no">
+		<object-type name="WindowAgentBase">
+			<enum-type name="SystemButton"/>
+		</object-type>
+		<object-type name="QuickWindowAgent"/>
+		<modify-function signature="registerTypes(QQmlEngine*)"/>
+	</namespace-type>
+</typesystem>

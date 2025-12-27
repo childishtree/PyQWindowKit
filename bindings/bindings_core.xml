@@ -1,0 +1,13 @@
+<!-- bindings_widgets.xml -->
+<typesystem package="Core">
+	<load-typesystem name="typesystem_core.xml" generate="no"/>
+	<!-- Bind QWindowKit::Widgets -->
+	<namespace-type name="QWK" visible="no">
+		<object-type name="StyleAgent">
+			<enum-type name="SystemTheme"/>
+		</object-type>
+		<object-type name="WindowAgentBase">
+			<enum-type name="SystemButton"/>
+		</object-type>
+	</namespace-type>
+</typesystem>

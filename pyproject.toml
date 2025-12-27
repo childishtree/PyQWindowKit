@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+    "scikit-build-core",        # Python 端的 CMake 构建工具，用于集成 C++ 项目构建
+    "cmake>=3.20",              # C++ 项目构建工具，要求版本不低于 3.20
+    "PySide6==6.10.1",          # Qt6 的 Python 绑定库（核心库），固定版本 6.10.1
+    "shiboken6==6.10.1",        # Qt 用于生成 Python/C++ 绑定的核心库
+    "shiboken6_generator==6.10.1"  # 用于生成 Python/C++ 绑定代码的工具
+]
+build-backend = "scikit_build_core.build"   # 指定使用 scikit-build-core 作为构建后端
+
+[project]
+name = "PyQWindowKit"                       # 项目/包的名称（pip install 时用这个名字）
+version = "1.4.1"                         # 项目版本号（遵循语义化版本）
+description = "Python bindings for the QWindowKit C++ Qt Widget"  # 项目描述，说明这是 QWindowKit C++ Qt 控件的 Python 绑定
+
+[tool.scikit-build]
+cmake.build-type = "Release"                                # CMake 构建类型：Release（生产环境，优化编译）
+cmake.args = [
+    "-DQWK_BUILD_QUICK=ON",
+    "-DCMAKE_PREFIX_PATH=D:/Applications/Qt/6.10.1/msvc2022_64",
+    "-DPython_EXECUTABLE=C:/Users/13617/Desktop/PyQWindowKit/ceshi/.venv/Scripts/python.exe",
+    "-DQWK_DIR=F:/Code/Qt/PyQWindowKit/demo/shibokendemo/qwkdemo/install"
+] # 传递给 CMake 的参数
+wheel.packages = ["./PyQWindowKit"]        # 指定打包到 wheel 中的 Python 代码目录

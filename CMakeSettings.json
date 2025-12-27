@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "x64-msvc-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "cmakeCommandArgs": "-DCMAKE_PREFIX_PATH=\"D:/Applications/Qt/6.10.1/msvc2022_64\" -DPython_EXECUTABLE=\"C:/Users/13617/Desktop/PyQWindowKit/ceshi/.venv/Scripts/python.exe\" -DQWK_DIR=\"F:/Code/Qt/PyQWindowKit/demo/shibokendemo/qwkdemo/install\" "
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<!-- bindings.xml -->
+<typesystem package="PyQWindowKit.Widgets">
+	<load-typesystem name="typesystem_core.xml" generate="no"/>
+        <load-typesystem name="typesystem_gui.xml" generate="no"/>
+	<load-typesystem name="typesystem_widgets.xml" generate="no"/>
+	<!-- Bind QWindowKit::Widgets -->
+	<namespace-type name="QWK" visible="no">
+		<object-type name="WindowAgentBase">
+			<enum-type name="SystemButton"/>
+		</object-type>
+		<object-type name="WidgetWindowAgent"/>
+	</namespace-type>
+</typesystem>
